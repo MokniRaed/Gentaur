@@ -6,7 +6,7 @@ const Mail = () => {
     <div className='flex flex-row items-center justify-center gap-1' >
         
         <FontAwesomeIcon color='#ffffff' width={20} icon={faEnvelope} />
-        <p className='text-sm' >us@genprice.com</p>
+        <p className='text-sm' >info@gentaur.com</p>
     </div>
   )
 }

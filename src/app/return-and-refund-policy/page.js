@@ -1,21 +1,18 @@
-/* eslint-disable react/no-unescaped-entities */
-// pages/privacy.js
 import Announcement from "@components/Announcement";
+import Footer from "@components/Footer";
 import Navbar from "@components/Navbar";
-import Menu from "@components/Menu";
-import Footer from "../components/Footer";
-import { getClusters } from "../api/requests";
 import SearchBar from "../components/SearchBar";
-import PrivacyPolicySection from "../components/PrivacyPolicySection";
+import { getClusters } from "../api/requests";
+import ReturnsPolicySection from "../components/ReturnsPolicySection";
 
-export default async function Privacy() {
+export default async function ReturnAndRefundPolicyPage() {
 	const clusters = await getClusters();
 	return (
 		<main className="font-[family-name:var(--font-geist-sans)] bg-white">
 			<Announcement />
 			<Navbar clusters={clusters} />
 			<SearchBar clusters={clusters} />
-			<PrivacyPolicySection/>
+			<ReturnsPolicySection />
 			<Footer />
 		</main>
 	);

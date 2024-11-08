@@ -38,7 +38,7 @@ export default async function Home() {
 	return (
 		<main className="font-[family-name:var(--font-geist-sans)] bg-white  items-center">
 			<Announcement />
-			<Navbar clusters={clusters} />
+			<Navbar clusters={clusters} /> 
 			<SearchBar clusters={clusters} />
 			<HeroSection />
 			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">

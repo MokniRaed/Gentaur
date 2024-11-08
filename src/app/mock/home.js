@@ -3,127 +3,225 @@ export const privacyImage = "https://placehold.co/512x512";
 
 export const menus = [
 	{
-		name: "Homepage",
+		name: "Home",
 		url: "/",
 		sub_menus: [
-			{
-				name: "News",
-				url: "/news",
-				rel: "nofollow",
-			},
-			{
-				name: "Scientific Journal",
-				url: "/scientific-journal",
-				rel: "nofollow",
-			},
-			{
-				name: "Outbreaks",
-				url: "/outbreaks",
-				rel: "nofollow",
-			},
-			{
-				name: "New Products",
-				url: "/new-products",
-				rel: "nofollow",
-			},
+			// {
+			// 	name: "News",
+			// 	url: "/news",
+			// 	rel: "nofollow",
+			// },
+			// {
+			// 	name: "Scientific Journal",
+			// 	url: "/scientific-journal",
+			// 	rel: "nofollow",
+			// },
+			// {
+			// 	name: "Outbreaks",
+			// 	url: "/outbreaks",
+			// 	rel: "nofollow",
+			// },
+			// {
+			// 	name: "New Products",
+			// 	url: "/new-products",
+			// 	rel: "nofollow",
+			// },
 		],
 	},
 	{
-		name: "Shop",
-		url: "/products",
-		sub_menus: [],
-	},
-	{
-		name: "All Products",
-		url: "/biotech-products",
-		sub_menus: [],
-	},
-	{
-		name: "Antibody",
-		url: "antibody",
+		name: "Categories",
+		url: "/categories",
 		sub_menus: [
+		
 			{
-				name: "Suppliers",
+				name: "Antibodies",
 				url: "/antibodies",
 				rel: "nofollow",
 			},
 			{
-				name: "Monoclonal",
-				url: "/antibody/monoclonal",
+				name: "Histology",
+				url: "/histology",
 				rel: "nofollow",
 			},
 			{
-				name: "Polyclonal",
-				url: "/antibody/polyclonal",
+				name: "Cell Analysis",
+				url: "/cell-analysis",
 				rel: "nofollow",
 			},
 			{
-				name: "Primary",
-				url: "/antibody/primary",
+				name: "Biochemical Reagents",
+				url: "/biochemical-reagents",
 				rel: "nofollow",
 			},
 			{
-				name: "Secondary",
-				url: "/antibody/secondary",
+				name: "Chemicals",
+				url: "/chemicals",
 				rel: "nofollow",
 			},
 			{
-				name: "Mouse",
-				url: "/antibody/mouse",
+				name: "Lab Equipment",
+				url: "/lab-equipment",
 				rel: "nofollow",
 			},
 			{
-				name: "Rabbit",
-				url: "/antibody/rabbit",
+				name: "PCR",
+				url: "/pcr",
 				rel: "nofollow",
 			},
 			{
-				name: "Human",
-				url: "/antibody/human",
+				name: "Real-Time PCR (qPCR)",
+				url: "/real-time-pcr",
 				rel: "nofollow",
 			},
 			{
-				name: "Goat",
-				url: "/antibody/goat",
+				name: "ELISA Kits",
+				url: "/elisa-kits",
 				rel: "nofollow",
 			},
 			{
-				name: "Rat",
-				url: "/antibody/rat",
+				name: "Buffers and Standards",
+				url: "/buffers-and-standards",
+				rel: "nofollow",
+			},
+			{
+				name: "Protein Assays",
+				url: "/protein-assays",
+				rel: "nofollow",
+			},
+			{
+				name: "Flow Cytometry",
+				url: "/flow-cytometry",
+				rel: "nofollow",
+			},
+			{
+				name: "DNA & RNA",
+				url: "/dna-and-rna",
+				rel: "nofollow",
+			},
+			{
+				name: "Electrophoresis",
+				url: "/electrophoresis",
+				rel: "nofollow",
+			},
+			{
+				name: "Diagnostic Kit",
+				url: "/diagnostic-kit",
+				rel: "nofollow",
+			},
+			{
+				name: "ELISA",
+				url: "/elisa",
+				rel: "nofollow",
+			},
+			{
+				name: "Proteins and Peptides",
+				url: "/proteins-and-peptides",
 				rel: "nofollow",
 			},
 		],
+		
 	},
 	{
-		name: "Elisa",
-		url: "/elisa-kit",
+		name: "Products",
+		url: "/products",
 		sub_menus: [],
 	},
 	{
-		name: "Pcr",
-		url: "/pcr-kit",
+		name: "Custom Services",
+		url: "/custom-services",
 		sub_menus: [],
 	},
-	{
-		name: "Recombinant",
-		url: "/recombinant-protein",
-		sub_menus: [],
-	},
-	{
-		name: "Culture",
-		url: "/culture-cell",
-		sub_menus: [],
-	},
-	{
-		name: "Blot",
-		url: "/western-blot",
-		sub_menus: [],
-	},
-	{
-		name: "Controls",
-		url: "/controls",
-		sub_menus: [],
-	},
+	// {
+	// 	name: "All Products",
+	// 	url: "/biotech-products",
+	// 	sub_menus: [],
+	// },
+	// {
+	// 	name: "Antibody",
+	// 	url: "antibody",
+	// 	sub_menus: [
+	// 		{
+	// 			name: "Suppliers",
+	// 			url: "/antibodies",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Monoclonal",
+	// 			url: "/antibody/monoclonal",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Polyclonal",
+	// 			url: "/antibody/polyclonal",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Primary",
+	// 			url: "/antibody/primary",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Secondary",
+	// 			url: "/antibody/secondary",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Mouse",
+	// 			url: "/antibody/mouse",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Rabbit",
+	// 			url: "/antibody/rabbit",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Human",
+	// 			url: "/antibody/human",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Goat",
+	// 			url: "/antibody/goat",
+	// 			rel: "nofollow",
+	// 		},
+	// 		{
+	// 			name: "Rat",
+	// 			url: "/antibody/rat",
+	// 			rel: "nofollow",
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	name: "Elisa",
+	// 	url: "/elisa-kit",
+	// 	sub_menus: [],
+	// },
+	// {
+	// 	name: "Pcr",
+	// 	url: "/pcr-kit",
+	// 	sub_menus: [],
+	// },
+	// {
+	// 	name: "Recombinant",
+	// 	url: "/recombinant-protein",
+	// 	sub_menus: [],
+	// },
+	// {
+	// 	name: "Culture",
+	// 	url: "/culture-cell",
+	// 	sub_menus: [],
+	// },
+	// {
+	// 	name: "Blot",
+	// 	url: "/western-blot",
+	// 	sub_menus: [],
+	// },
+	// {
+	// 	name: "Controls",
+	// 	url: "/controls",
+	// 	sub_menus: [],
+	// },
 ];
 
 export const ShowcaseCards = [
