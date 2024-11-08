@@ -44,27 +44,27 @@ const Navbar = ({ clusters }) => {
   };
 
   return (
-    <>
-      {/* Main Navbar */}
-      <div className="w-full h-auto bg-white flex flex-row items-center justify-center shadow-lg">
-        <div className="px-2 py-3 h-full w-full lg:w-[85%] lg:pl-0 flex flex-row items-center justify-between">
-          <div className="max-w-[200px] max-h-[200px] cursor-pointer transition-transform duration-500 hover:scale-110">
-            <Link href="/">
-              <Image
-                src={Logo}
-                alt="Logo"
-                className="ml-[-7.5px]"
-                width={96}
-                height={96}
-              />
-            </Link>
-          </div>
-          <div className="hidden w-[100%] lg:block">
-            <Menu pathname={pathname} />
-          </div>
-          <CartButtons />
-        </div>
-      </div>
+   <>
+     {/* Main Navbar */}
+     <div className="w-full h-auto bg-white flex flex-row items-center justify-center shadow-lg">
+       <div className="px-2 py-3 h-full w-full lg:w-[85%] lg:pl-0 flex flex-row items-center justify-between">
+         <div className="max-w-[200px] max-h-[200px] cursor-pointer transition-transform duration-500 hover:scale-110">
+           <Link href="/">
+             <Image
+              src={Logo}
+              alt="Logo"
+              className="ml-[-7.5px]"
+              width={96}
+              height={96}
+             />
+           </Link>
+         </div>
+         <div className="hidden w-[100%] lg:block">
+           <Menu pathname={pathname} />
+         </div>
+         <CartButtons />
+       </div>
+     </div>
 
       {/* Mobile Menu */}
       <div className="block w-full h-auto bg-white lg:hidden">
