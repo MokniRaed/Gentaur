@@ -13,7 +13,7 @@ const nextConfig = {
       {
         source: '/gentaur/:path*',
         // destination: 'https://api.affitechbio.com/api/:path*', // Proxy to Backend
-        destination: 'http://192.168.100.66:8800/gentaur/:path*', // Proxy to Backend
+        destination: 'http://192.168.100.66:8800/gentau/:path*', // Proxy to Backend
       },
     ];
   },
