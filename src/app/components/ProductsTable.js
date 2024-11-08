@@ -76,7 +76,7 @@ const ActionRender = memo(({ row, addProductToCart }) => {
 					paddingLeft: 1,
 				}}
 			>
-				ADD
+				+Add
 			</Chip>
 		</Box>
 	);

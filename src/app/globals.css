@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
 	left: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234; /* Matches the color of the text */
+	border: 2px solid #d9a400; /* Updated color */
 	border-right: none;
 	border-top: none;
 }
@@ -81,7 +81,7 @@ body::-webkit-scrollbar {
 	right: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234;
+	border: 2px solid #d9a400; /* Updated color */
 	border-left: none;
 	border-top: none;
 }
@@ -99,7 +99,7 @@ body::-webkit-scrollbar {
 	left: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234; /* Matches the color of the text */
+	border: 2px solid #d9a400; /* Updated color */
 	border-right: none;
 	border-top: none;
 }
@@ -112,7 +112,7 @@ body::-webkit-scrollbar {
 	right: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234;
+	border: 2px solid #d9a400; /* Updated color */
 	border-left: none;
 	border-top: none;
 }
@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
 	left: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234; /* Matches the color of the text */
+	border: 2px solid #d9a400; /* Updated color */
 	border-right: none;
 	border-top: none;
 }
@@ -143,7 +143,7 @@ body::-webkit-scrollbar {
 	right: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234;
+	border: 2px solid #d9a400; /* Updated color */
 	border-left: none;
 	border-top: none;
 }
@@ -156,7 +156,7 @@ body::-webkit-scrollbar {
 	left: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234;
+	border: 2px solid #d9a400; /* Updated color */
 	border-bottom: none;
 	border-right: none;
 }
@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
 	right: 0;
 	width: 15px; /* Adjust size as needed */
 	height: 15px;
-	border: 2px solid #b22234;
+	border: 2px solid #d9a400; /* Updated color */
 	border-bottom: none;
 	border-left: none;
 }

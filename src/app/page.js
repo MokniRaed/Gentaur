@@ -35,7 +35,7 @@ export default async function Home() {
 	return (
 		<main className="font-[family-name:var(--font-geist-sans)] bg-white">
 			<Announcement />
-			<Navbar clusters={clusters} />
+			<Navbar clusters={clusters} /> 
 			<SearchBar clusters={clusters} />
 			<Showcase />
 			<Divider />
