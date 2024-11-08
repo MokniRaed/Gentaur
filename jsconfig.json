@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", // Ensure you have this set
+    "paths": {
+      "src/*": ["./src/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@images/*": ["./src/app/images/*"],
+      "@mock/*": ["./src/app/mock/*"],
+    }
+  }
+}

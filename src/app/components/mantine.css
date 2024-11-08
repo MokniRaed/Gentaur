@@ -1,0 +1,10 @@
+/* styles.css */
+.no-border-no-shadow {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  .no-border-no-shadow th, .no-border-no-shadow td {
+    border: none !important;
+  }
+  
