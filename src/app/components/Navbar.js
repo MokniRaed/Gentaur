@@ -46,7 +46,7 @@ const Navbar = ({ clusters }) => {
 	return (
 		<>
 			{/* Main Navbar */}
-			<div className="w-full h-auto bg-white flex flex-row items-center justify-center shadow-md">
+			<div className="w-full h-auto bg-white flex flex-row items-center justify-center shadow-md ">
 				<div className="px-2 py-2 h-full w-full lg:w-[85%] lg:pl-0 flex flex-row items-center justify-between">
 					<div className="max-w-[200px] max-h-[200px] cursor-pointer">
 						<Link href="/">
