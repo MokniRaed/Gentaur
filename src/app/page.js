@@ -7,9 +7,6 @@ import ProductsTwo from "@components/ProductsTwo";
 import DividerHR from "@components/DividerHR";
 import Suppliers from "@components/Suppliers";
 import Footer from "./components/Footer";
-import SearchBar from "./components/SearchBar";
-import { getClusters } from "./api/requests";
-import Empty from "./components/Empty";
 import HeroSection from "@components/HeroSection";
 import Service from "@components/Service";
 import SectionTitle from "@components/SectionTitle"; // Import the reusable component
@@ -20,6 +17,7 @@ export default async function Home() {
 	// const clusters = await getClusters();
 	 const clusters = [];
 
+
 	//  if (!clusters || clusters.length === 0) {
 	//  	return (
 	//  		<div className="w-screen h-screen bg-white flex items-center justify-center">
@@ -28,12 +26,11 @@ export default async function Home() {
 	//  	);
 	//  }
 	return (
-		<main className="font-[family-name:var(--font-geist-sans)] bg-white items-center">
-			<Announcement />
-			<Navbar clusters={clusters} />
-			<SearchBar clusters={clusters} />
+		<>
+			{/*<Navbar clusters={clusters} />*/}
+			{/*<SearchBar clusters={clusters} />*/}
 			<HeroSection />
-			
+
 			{/* Replaced the repetitive section with SectionTitle component */}
 			<SectionTitle
 				title="Why "
@@ -120,18 +117,14 @@ export default async function Home() {
             <div className="relative z-20 h-full flex items-center justify-start pl-10 md:pl-20">
                 <div className="text-white max-w-lg">
                     <h1 className="text-4xl font-bold mb-4">
-                        Recombinant Antibodies for Mpox Research from GeneTex
-                    </h1>
-                    <p className="text-lg mb-6">
-                        GeneTex is using its recombinant monoclonal antibody production platform and enhanced validation strategies to create reliable reagents for Mpox research.
-                    </p>
+																					Connecting You to Quality Worldwide
+																				</h1>
                     <Link href="/more-info"  className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-secondary hover:bg-secondaryDark focus:ring-4 focus:ring-secondary-300 dark:focus:ring-secondary-900 transition duration-300">
                             Read more
                     </Link>
                 </div>
             </div>
         </section>
-			<Footer />
-		</main>
+		</>
 	);
 }

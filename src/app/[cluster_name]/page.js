@@ -99,13 +99,8 @@ export default async function Product({ params, searchParams }) {
 // Reusable layout component
 function MainLayout({ clusters, children }) {
 	return (
-		<main className="flex flex-col min-h-screen bg-white font-[family-name:var(--font-geist-sans)]">
-			<Announcement />
-			<Navbar clusters={clusters} />
-
-			<SearchBar clusters={clusters} />
+		<>
 			<div className="flex flex-grow">{children}</div>
-			<Footer />
-		</main>
+		</>
 	);
 }

@@ -7,6 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { CartContext } from "../contexts/Cart";
 import { productsImageCartPage } from "../mock/products";
 import Image from "next/image";
+
 const CartItem = ({ product, changeQuantity, removeProduct }) => {
 	return (
 		<div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm   md:p-6">
@@ -17,8 +18,11 @@ const CartItem = ({ product, changeQuantity, removeProduct }) => {
 					<Image
 					fill
 						className="hidden h-20 w-20 "
+
 						src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
 						alt="imac image"
+						width={80}
+						height={80}
 					/>
 				</a>
 

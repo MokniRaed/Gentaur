@@ -4,6 +4,7 @@ import CartContextProvider from "./contexts/Cart";
 import { Suspense } from "react";
 import Loader from "./components/Loader";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,6 +22,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ // const clusters = await getClusters();
+ const clusters = [];
   return (
     <html lang="en">
       <body
@@ -30,6 +33,7 @@ export default function RootLayout({ children }) {
         <CartContextProvider>{children}</CartContextProvider>
         </Suspense>
       </body>
+
     </html>
-  );
+);
 }

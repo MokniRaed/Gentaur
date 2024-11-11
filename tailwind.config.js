@@ -14,6 +14,7 @@ module.exports = {
 				primaryDark: "#25327b",
 				secondary: "#fecc00 ",
 				secondaryDark: "#d9a400",
+
 			},
 			screens: {
 				lg: "1200px",

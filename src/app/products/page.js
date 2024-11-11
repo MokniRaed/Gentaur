@@ -54,6 +54,7 @@ export default async function Home({ searchParams }) {
 			</div>
 			<Navbar clusters={clusters} />
 			<SearchBar clusters={clusters} />
+
 			<div className="flex flex-grow overflow-hidden">
 				{response.count &&
 				response.count > 0 &&
@@ -69,11 +70,10 @@ export default async function Home({ searchParams }) {
 						<Empty />
 					</div>
 				)}
-			</div>
-			
-
+			</div>			
 		</main>
 		<Footer />
+
 		</>
 	);
 }

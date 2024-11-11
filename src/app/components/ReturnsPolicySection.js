@@ -64,6 +64,7 @@ const ReturnsPolicySection = () => {
           If, for any reason, you wish to cancel and refund your order before it
           has been processed, please contact our support team. We define
           &apos;processed&apos; as the moment your order is added to our ordering system.
+
           <br />
           <br />
           Refunds for canceled orders are typically processed within two weeks.

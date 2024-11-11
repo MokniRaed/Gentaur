@@ -36,7 +36,7 @@ const Menu = ({ pathname }) => {
 			clearTimeout(menuTimeout);
 			clearTimeout(subMenuTimeout);
 		};
-	}, []);
+	}, [menuTimeout, subMenuTimeout]);
 
 	return (
 		<div className="w-full h-auto bg-white flex flex-row items-center justify-center">
