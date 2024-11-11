@@ -1,6 +1,6 @@
 import { productsOne } from "@mock/home";
 import ProductCardHome from "./ProductCardHome";
-import productImage from "@images/product.png"
+import productImage from "@images/Gentaur-product1.png"
 import Image from "next/image";
 const ProductsOne = () => {
  return (
@@ -17,7 +17,7 @@ const ProductsOne = () => {
        height={500}
         src={productImage}
         alt={product.name}
-        className="w-full h-48 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-110"
+        className="w-full h-48 object-contain rounded-t-lg transition-transform duration-300 transform hover:scale-110"
        />
       </div>
       <div className="p-6 flex flex-col justify-between flex-1 ">

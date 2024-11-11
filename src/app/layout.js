@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import CartContextProvider from "./contexts/Cart";
+import { Suspense } from "react";
+import Loader from "./components/Loader";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,7 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Suspense fallback={<Loader/>}>
         <CartContextProvider>{children}</CartContextProvider>
+        </Suspense>
       </body>
     </html>
   );

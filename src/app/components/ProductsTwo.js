@@ -1,6 +1,6 @@
 import { productsTwo } from "@mock/home";
 import ProductCardHome from "./ProductCardHome";
-import productImage from "@images/Gentaur.webp"
+import productImage from "@images/Gentaur-product3.png"
 
 const ProductsTwo = () => {
   return (

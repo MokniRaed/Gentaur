@@ -50,34 +50,10 @@ const ActionRender = memo(({ row, addProductToCart }) => {
 				justifyContent: "flex-start",
 			}}
 		>
-			<Chip
-				size="sm"
-				// variant="soft"
-				onClick={() => addProductToCart(row)}
-				slotProps={{
-					root: {
-						sx: {
-							backgroundColor: "#b22234",
-							":hover": { backgroundColor: "#8e1b29" },
-						},
-					},
-					action: {
-						sx: {
-							backgroundColor: "#b22234",
-							":hover": { backgroundColor: "#8e1b29" },
-						},
-					},
-					label: { sx: { color: "#fff" } },
-				}}
-				sx={{
-					display: "flex",
-					justifyContent: "center",
-					paddingRight: 1,
-					paddingLeft: 1,
-				}}
+			<Box className="p-1 bg-secondary hover:bg-secondaryDark rounded-2xl text-white" 				onClick={() => addProductToCart(row)}
 			>
 				+Add
-			</Chip>
+			</Box>
 		</Box>
 	);
 });

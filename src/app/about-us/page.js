@@ -33,7 +33,7 @@ export default async function About() {
 								Established with the vision of creating impactful solutions, our company
 								has evolved over the years into a hub of innovation and expertise. Our
 								dedicated team has worked on numerous groundbreaking projects that push
-								the boundaries of what's possible.
+								the boundaries of what&apos;s possible.
 							</p>
 						</div>
 						<div className="relative h-64">

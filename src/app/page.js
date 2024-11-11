@@ -17,16 +17,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default async function Home() {
-	const clusters = await getClusters();
-	// const clusters = [];
+	// const clusters = await getClusters();
+	 const clusters = [];
 
-	 if (!clusters || clusters.length === 0) {
-	 	return (
-	 		<div className="w-screen h-screen bg-white flex items-center justify-center">
-	 			<Empty />
-	 		</div>
-	 	);
-	 }
+	//  if (!clusters || clusters.length === 0) {
+	//  	return (
+	//  		<div className="w-screen h-screen bg-white flex items-center justify-center">
+	//  			<Empty />
+	//  		</div>
+	//  	);
+	//  }
 	return (
 		<main className="font-[family-name:var(--font-geist-sans)] bg-white items-center">
 			<Announcement />

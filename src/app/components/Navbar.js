@@ -1,5 +1,5 @@
 "use client";
-import Logo from "@images/Gentaur-eu_.svg";
+import Logo from "@images/Gentaur-logo.png";
 import { menus } from "@mock/home";
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -55,8 +55,8 @@ const Navbar = ({ clusters }) => {
               src={Logo}
               alt="Logo"
               className="ml-[-7.5px]"
-              width={96}
-              height={96}
+              width={126}
+              height={126}
              />
            </Link>
          </div>

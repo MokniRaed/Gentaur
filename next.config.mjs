@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["placehold.co","cdn.gentaur.co.uk","media.licdn.com","www.leinco.com"], // Replace with your domain
+    domains: ["placehold.co","cdn.gentaur.co.uk","media.licdn.com","www.leinco.com","flowbite.s3.amazonaws.com"], // Replace with your domain
     dangerouslyAllowSVG: true,
   },
   env: {
