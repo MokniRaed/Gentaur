@@ -1,19 +1,11 @@
 // pages/about.js
 import Image from "next/image";
 import { aboutImage } from "../mock/home";
-import Announcement from "@components/Announcement";
-import Navbar from "@components/Navbar";
 import Footer from "../components/Footer";
-import { getClusters } from "../api/requests";
-import SearchBar from "../components/SearchBar";
 
 export default async function About() {
-	const clusters = await getClusters();
 	return (
-		<main className="font-[family-name:var(--font-geist-sans)] bg-white">
-			<Announcement />
-			<Navbar clusters={clusters} />
-			<SearchBar clusters={clusters} />
+		<>
 			<div className="container mx-auto bg-white py-16 px-4 sm:px-6 lg:px-8">
 				<div className="text-center mt-4">
 					<h1 className="text-4xl scale-105 font-extrabold text-gray-900 mb-4">
@@ -33,7 +25,7 @@ export default async function About() {
 								Established with the vision of creating impactful solutions, our company
 								has evolved over the years into a hub of innovation and expertise. Our
 								dedicated team has worked on numerous groundbreaking projects that push
-								the boundaries of what's possible.
+								the boundaries of what&apos;s possible.
 							</p>
 						</div>
 						<div className="relative h-64">
@@ -124,7 +116,6 @@ export default async function About() {
 					</div>
 				</section>
 			</div>
-			<Footer />
-		</main>
+		</>
 	);
 }

@@ -1,4 +1,5 @@
 import { ShowcaseCards } from "@mock/home";
+import Image from 'next/image';
 import ShowcaseCard from "./ShowcaseCard";
 
 const Showcase = () => {
@@ -17,10 +18,12 @@ const Showcase = () => {
           className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform"
          >
           <div className="relative overflow-hidden">
-           <img
+           <Image
             src={card.image}
             alt={card.title}
             className="w-full h-48 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-110"
+            width={500}  // Set your desired width
+            height={200} // Set your desired height
            />
           </div>
           <div className="p-6 flex flex-col justify-between flex-1">
@@ -49,7 +52,7 @@ const Showcase = () => {
         className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform"
        >
         <div className="relative overflow-hidden">
-         <img
+         <Image
           src={card.image}
           alt={card.title}
           className="w-full h-48 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-110"

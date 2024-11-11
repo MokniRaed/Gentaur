@@ -17,7 +17,7 @@ const FaqSection = () => {
       answer: (
         <ul className="list-disc pl-5 space-y-1">
           <li>
-            <strong>High quality:</strong> Gentaur's products are ISO 9001:2015 certified and CE marked, known for high quality and reliability.
+            <strong>High quality:</strong> Gentaur&apos;s products are ISO 9001:2015 certified and CE marked, known for high quality and reliability.
           </li>
           <li>
             <strong>Competitive prices:</strong> Gentaur offers competitive pricing on its products.

@@ -1,6 +1,11 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import CartContextProvider from "./contexts/Cart";
+import Navbar from "@components/Navbar";
+import Announcement from "@components/Announcement";
+import Footer from "@components/Footer";
+import { Suspense } from "react";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,13 +24,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ // const clusters = await getClusters();
+ const clusters = [];
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <CartContextProvider>{children}</CartContextProvider>
-      </body>
+    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <main className="font-[family-name:var(--font-geist-sans)] bg-white items-center">
+     <Announcement />
+     <Navbar clusters={clusters} />
+     <CartContextProvider>{children}</CartContextProvider>
+     <Footer />
+    </main>
+    </body>
     </html>
-  );
+);
 }

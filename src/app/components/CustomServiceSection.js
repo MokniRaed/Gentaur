@@ -64,9 +64,9 @@ const CustomServiceSection = () => {
         <section>
           <h2 className="text-2xl font-semibold text-primary mb-4">Examples of Our Work:</h2>
           <ul className="space-y-4 text-gray-700">
-            <li>🔬 A team of researchers used Gentaur's custom synthesis services to develop a new antibody that could be used to diagnose a rare cancer.</li>
-            <li>⚙️ A company used Gentaur's custom equipment design services to develop a new PCR machine that was more efficient and accurate.</li>
-            <li>🏫 A university used Gentaur's consulting services to help them set up a new research lab.</li>
+            <li>🔬 A team of researchers used Gentaur&apos;s custom synthesis services to develop a new antibody that could be used to diagnose a rare cancer.</li>
+            <li>⚙️ A company used Gentaur&apos;s custom equipment design services to develop a new PCR machine that was more efficient and accurate.</li>
+            <li>🏫 A university used Gentaur&apos;s consulting services to help them set up a new research lab.</li>
           </ul>
         </section>
 

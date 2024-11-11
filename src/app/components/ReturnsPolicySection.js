@@ -39,7 +39,7 @@ const ReturnsPolicySection = () => {
           delivery may extend to the subsequent working day.
           <br />
           <br />
-          The actual delivery timeline may vary based on the courier's
+          The actual delivery timeline may vary based on the courier&apos;s
           accessibility to the shipping address or customs clearance for
           international shipments. For products not currently in stock or those
           requiring manufacturing, the delivery period typically ranges from 1
@@ -49,7 +49,7 @@ const ReturnsPolicySection = () => {
           <br />
           When placing your order, please acknowledge that the shipping process
           involves third-party carriers such as TNT, FedEx, UPS, and/or
-          Schenker. It is the customer's responsibility to provide an accurate
+          Schenker. It is the customer&apos;s responsibility to provide an accurate
           and verified shipping/delivery address. GentaurShop assures accurate
           address information input as communicated by the customer and reserves
           the right to disclaim liability in cases of unexpected delays or
@@ -63,7 +63,7 @@ const ReturnsPolicySection = () => {
         <p>
           If, for any reason, you wish to cancel and refund your order before it
           has been processed, please contact our support team. We define
-          "processed" as the moment your order is added to our ordering system.
+         &apos;processed&apos; as the moment your order is added to our ordering system.
           <br />
           <br />
           Refunds for canceled orders are typically processed within two weeks.

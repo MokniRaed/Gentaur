@@ -45,12 +45,7 @@ export default async function Home({ searchParams }) {
 	}
 
 	return (
-		<main className="flex flex-col h-screen bg-white font-[family-name:var(--font-geist-sans)]">
-			<div className="h-[35px] w-full">
-				<Announcement />
-			</div>
-			<Navbar clusters={clusters} />
-			<SearchBar clusters={clusters} />
+		<>
 			<div className="flex flex-grow overflow-hidden">
 				{response.count &&
 				response.count > 0 &&
@@ -67,6 +62,6 @@ export default async function Home({ searchParams }) {
 					</div>
 				)}
 			</div>
-		</main>
+		</>
 	);
 }

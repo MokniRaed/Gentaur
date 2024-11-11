@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { Button, FormControl, Input, Textarea } from "@mui/joy";
 import { InputLabel } from "@mui/material";
@@ -37,7 +36,7 @@ const ContactSection = () => {
       <Toaster />
       <h1 className="text-4xl font-bold text-primary mb-3">Get in Touch</h1>
       <p className="text-lg text-gray-600 mb-8 max-w-md text-center">
-        We'd love to hear from you! Please fill in your details below, and our team will get back to you shortly.
+        We&apos;d love to hear from you! Please fill in your details below, and our team will get back to you shortly.
       </p>
 
       {isLoading ? (
@@ -138,7 +137,7 @@ const ContactSection = () => {
    {/* Contact Information Table */}
 <div className="w-full lg:w-3/4 xl:w-1/2 mt-12">
   <h2 className="text-2xl font-semibold text-primary  text-center">Our Global Offices</h2>
-  <p className="  text-gray-700  text-sm  mb-4 mt-2 text-center">Don't hesitate To Contact us
+  <p className="  text-gray-700  text-sm  mb-4 mt-2 text-center">Don&apos;t hesitate To Contact us
 
 </p>
 

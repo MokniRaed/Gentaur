@@ -1,22 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
-// pages/privacy.js
-import Announcement from "@components/Announcement";
-import Navbar from "@components/Navbar";
-import Menu from "@components/Menu";
-import Footer from "../components/Footer";
-import { getClusters } from "../api/requests";
-import SearchBar from "../components/SearchBar";
 import PrivacyPolicySection from "../components/PrivacyPolicySection";
 
 export default async function Privacy() {
-	const clusters = await getClusters();
 	return (
-		<main className="font-[family-name:var(--font-geist-sans)] bg-white">
-			<Announcement />
-			<Navbar clusters={clusters} />
-			<SearchBar clusters={clusters} />
+		<>
 			<PrivacyPolicySection/>
-			<Footer />
-		</main>
+		</>
 	);
 }
