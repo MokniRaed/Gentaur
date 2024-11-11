@@ -15,9 +15,9 @@ const ProductCardHome = ({
 			<Image
 				src={image}
 				alt={title}
-				width={192}
-				height={192}
-				className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
+				width={500}
+				height={500}
+				className="w-full h-48 object-contain hover:scale-105 transition-all duration-300 ease-in-out"
 			/>
 			<div className="p-4 flex flex-col items-start justify-center w-full gap-1">
 				<h3 className="text-lg font-semibold text-primary hover:text-primaryDark">
@@ -28,7 +28,7 @@ const ProductCardHome = ({
 					Availability :{" "}
 					<span
 						style={{
-							color: availability === "In Stock" ? "#3c3b6e" : "#b22234",
+							color: availability === "In Stock" ? "#4CAF50" : "#b22234",
 						}}
 						className="font-semibold"
 					>

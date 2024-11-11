@@ -6,9 +6,9 @@ const ExpertCard = ({ image, title, roles }) => {
 			<Image
 				src={image}
 				alt={title}
-				width={192}
-				height={192}
-				className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
+				width={500}
+				height={500}
+				className="w-full h-48 object-contain object-top hover:scale-105 transition-all duration-300 ease-in-out"
 			/>
 			<div className="p-4 flex flex-col items-start justify-center w-full gap-1">
 				<div className="min-h-14">

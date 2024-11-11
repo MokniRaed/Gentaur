@@ -1,140 +1,136 @@
 import Announcement from "@components/Announcement";
 import Navbar from "@components/Navbar";
-import Menu from "@components/Menu";
-import Showcase from "@components/Showcase";
 import Intro from "@components/Intro";
 import ProductsOne from "@components/ProductsOne";
 import Exprets from "@components/Exprets";
 import ProductsTwo from "@components/ProductsTwo";
-import Divider from "@components/Divider";
-import IntroTwo from "@components/IntroTwo";
 import DividerHR from "@components/DividerHR";
-import ProductsThree from "@components/ProductsThree";
-import Blogs from "@components/Blogs";
-import ProductsFour from "@components/ProductsFour";
 import Suppliers from "@components/Suppliers";
-import IntroThree from "@components/IntroThree";
-import ProductsFive from "@components/ProductsFive";
-import ProductsSix from "@components/ProductsSix";
 import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
 import { getClusters } from "./api/requests";
 import Empty from "./components/Empty";
 import HeroSection from "@components/HeroSection";
 import Service from "@components/Service";
-import Separator from "@components/Separator";
+import SectionTitle from "@components/SectionTitle"; // Import the reusable component
+import Link from "next/link";
+import Image from "next/image";
 
 export default async function Home() {
-	// const clusters = await getClusters();
-	const clusters = []
+	const clusters = await getClusters();
+	// const clusters = [];
 
-
-	// if (!clusters || clusters.length === 0) {
-	// 	return (
-	// 		<div className="w-screen h-screen bg-white flex items-center justify-center">
-	// 			<Empty />
-	// 		</div>
-	// 	);
-	// }
+	 if (!clusters || clusters.length === 0) {
+	 	return (
+	 		<div className="w-screen h-screen bg-white flex items-center justify-center">
+	 			<Empty />
+	 		</div>
+	 	);
+	 }
 	return (
-		<main className="font-[family-name:var(--font-geist-sans)] bg-white  items-center">
+		<main className="font-[family-name:var(--font-geist-sans)] bg-white items-center">
 			<Announcement />
-			<Navbar clusters={clusters} /> 
+			<Navbar clusters={clusters} />
 			<SearchBar clusters={clusters} />
 			<HeroSection />
-			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
-				<h6 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-primaryDark md:text-5xl lg:text-4xl">
-					<span
-						className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Better Data</span> Scalable
-					AI.
-				</h6>
-				<p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-					Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive
-					economic growth.
-				</p>
-			</div>
-			<Separator />
+			
+			{/* Replaced the repetitive section with SectionTitle component */}
+			<SectionTitle
+				title="Why "
+				subtitle="Choose Us"
+				description="We Make Shopping Simple: Fast Global Shipping, Secure Payments, and Expert Guidance Every Step of the Way."
+				gradientFrom="#2c3493"
+				gradientTo="#f5c500"
+			/>
+			
 			<Service />
-			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
-				<h6 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-primaryDark md:text-5xl lg:text-4xl">
-					<span
-						className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Better Data</span> Scalable
-					AI.
-				</h6>
-				<p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-					Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive
-					economic growth.
-				</p>
-			</div>
-			<Separator />
-			<Showcase />
-			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
-				<h6 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-primaryDark md:text-5xl lg:text-4xl">
-					<span
-						className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Better Data</span> Scalable
-					AI.
-				</h6>
-				<p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-					Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive
-					economic growth.
-				</p>
-			</div>
-			<Separator />
+			<DividerHR />
+			
+			{/* Repeated section replaced with SectionTitle */}
+			<SectionTitle
+				title="Better Data"
+				subtitle="Scalable AI"
+				description="Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+				gradientFrom="#2c3493"
+				gradientTo="#f5c500"
+			/>
+			
 			<Intro />
-			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
-				<h6 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-primaryDark md:text-5xl lg:text-4xl">
-					<span
-						className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Better Data</span> Scalable
-					AI.
-				</h6>
-				<p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-					Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive
-					economic growth.
-				</p>
-			</div>
-			<Separator />
-			<Suppliers />
-			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
-				<h6 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-primaryDark md:text-5xl lg:text-4xl">
-					<span
-						className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Better Data</span> Scalable
-					AI.
-				</h6>
-				<p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-					Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive
-					economic growth.
-				</p>
-			</div>
-			<Separator />
-			<ProductsOne />
-			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
-				<h6 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-primaryDark md:text-5xl lg:text-4xl">
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f5c500]  to-[#2c3493]">
-        Our Experts</span>
-     Scalable AI.
-				</h6>
+			<DividerHR />
 
-				<p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-					Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive
-					economic growth.
-				</p>
-			</div>
-			<Separator />
+			{/* Repeated section replaced with SectionTitle */}
+			<SectionTitle
+				title="Our Suppliers"
+				subtitle=""
+				// description="Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+				gradientFrom="#2c3493"
+				gradientTo="#f5c500"
+			/>
+			<Suppliers />
+			<DividerHR />
+
+			{/* Repeated section replaced with SectionTitle */}
+			<SectionTitle
+				title="Discover"
+				subtitle="Our Products"
+				description="Explore a wide range of high-quality laboratory supplies, reagents, and research tools for life sciences and biomedical research at Gentaur.com."
+				gradientFrom="#2c3493"
+				gradientTo="#f5c500"
+			/>
+			<ProductsOne />
+			<DividerHR />
+
+			{/* Repeated section replaced with SectionTitle */}
+			<SectionTitle
+				title="Our Experts"
+				subtitle=""
+				description="Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+				gradientFrom="#2c3493"
+				gradientTo="#f5c500"
+			/>
 			<Exprets />
-			<div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
-				<h6 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-primaryDark md:text-5xl lg:text-4xl">
-					<span
-						className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Better Data</span> Scalable
-					AI.
-				</h6>
-				<p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-					Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive
-					economic growth.
-				</p>
-			</div>
-			<Separator />
+			<DividerHR />
+
+			{/* Repeated section replaced with SectionTitle */}
+			<SectionTitle
+				title="Find "
+				subtitle="the product you need"
+				description="we offer a wide selection of products. From antibodies and diagnostic kits to lab equipment and molecular biology products"
+				gradientFrom="#2c3493"
+				gradientTo="#f5c500"
+			/>
 			<ProductsTwo />
 			<DividerHR />
+			<section className="relative h-[500px] w-full">
+
+            {/* Background Image */}
+            <Image
+                src="https://www.leinco.com/wp-content/uploads/2024/05/Recombinant-antibody-web-1.jpg" // replace with your image path
+                alt="Background for Mpox Research"
+                layout="fill"
+                objectFit="cover"
+                className="absolute inset-0 z-0"
+                priority // Optional: load this image with priority
+            />
+
+            {/* Overlay with gradient */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent z-10"></div>
+
+            {/* Content */}
+            <div className="relative z-20 h-full flex items-center justify-start pl-10 md:pl-20">
+                <div className="text-white max-w-lg">
+                    <h1 className="text-4xl font-bold mb-4">
+                        Recombinant Antibodies for Mpox Research from GeneTex
+                    </h1>
+                    <p className="text-lg mb-6">
+                        GeneTex is using its recombinant monoclonal antibody production platform and enhanced validation strategies to create reliable reagents for Mpox research.
+                    </p>
+                    <Link href="/more-info"  className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-secondary hover:bg-secondaryDark focus:ring-4 focus:ring-secondary-300 dark:focus:ring-secondary-900 transition duration-300">
+                            Read more
+                    </Link>
+                </div>
+            </div>
+        </section>
 			<Footer />
 		</main>
 	);

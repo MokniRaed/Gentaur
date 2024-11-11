@@ -5,38 +5,41 @@ export const menus = [
 	{
 		name: "Home",
 		url: "/",
-		sub_menus: [
-			// {
-			// 	name: "News",
-			// 	url: "/news",
-			// 	rel: "nofollow",
-			// },
-			// {
-			// 	name: "Scientific Journal",
-			// 	url: "/scientific-journal",
-			// 	rel: "nofollow",
-			// },
-			// {
-			// 	name: "Outbreaks",
-			// 	url: "/outbreaks",
-			// 	rel: "nofollow",
-			// },
-			// {
-			// 	name: "New Products",
-			// 	url: "/new-products",
-			// 	rel: "nofollow",
-			// },
-		],
+		sub_menus: [],
 	},
 	{
 		name: "Categories",
 		url: "/categories",
 		sub_menus: [
-		
 			{
 				name: "Antibodies",
 				url: "/antibodies",
 				rel: "nofollow",
+				sub_menus: [
+					{
+					  name: "Primary ",
+					  url: "/primary",
+					  rel: "nofollow",
+					  sub_menus: [
+						{
+						  name: "Primary Antibodies",
+						  url: "/antibodies/primary",
+						  rel: "nofollow",
+						},
+						{
+						  name: "Secondary Antibodies",
+						  url: "/secondary",
+						  rel: "nofollow",
+						},
+					  ],
+					},
+					{
+					  name: "Secondary ",
+					  url: "/secondary",
+					  rel: "nofollow",
+					},
+				  ],
+			
 			},
 			{
 				name: "Histology",
@@ -119,7 +122,6 @@ export const menus = [
 				rel: "nofollow",
 			},
 		],
-		
 	},
 	{
 		name: "Products",
@@ -131,97 +133,6 @@ export const menus = [
 		url: "/custom-services",
 		sub_menus: [],
 	},
-	// {
-	// 	name: "All Products",
-	// 	url: "/biotech-products",
-	// 	sub_menus: [],
-	// },
-	// {
-	// 	name: "Antibody",
-	// 	url: "antibody",
-	// 	sub_menus: [
-	// 		{
-	// 			name: "Suppliers",
-	// 			url: "/antibodies",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Monoclonal",
-	// 			url: "/antibody/monoclonal",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Polyclonal",
-	// 			url: "/antibody/polyclonal",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Primary",
-	// 			url: "/antibody/primary",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Secondary",
-	// 			url: "/antibody/secondary",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Mouse",
-	// 			url: "/antibody/mouse",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Rabbit",
-	// 			url: "/antibody/rabbit",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Human",
-	// 			url: "/antibody/human",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Goat",
-	// 			url: "/antibody/goat",
-	// 			rel: "nofollow",
-	// 		},
-	// 		{
-	// 			name: "Rat",
-	// 			url: "/antibody/rat",
-	// 			rel: "nofollow",
-	// 		},
-	// 	],
-	// },
-	// {
-	// 	name: "Elisa",
-	// 	url: "/elisa-kit",
-	// 	sub_menus: [],
-	// },
-	// {
-	// 	name: "Pcr",
-	// 	url: "/pcr-kit",
-	// 	sub_menus: [],
-	// },
-	// {
-	// 	name: "Recombinant",
-	// 	url: "/recombinant-protein",
-	// 	sub_menus: [],
-	// },
-	// {
-	// 	name: "Culture",
-	// 	url: "/culture-cell",
-	// 	sub_menus: [],
-	// },
-	// {
-	// 	name: "Blot",
-	// 	url: "/western-blot",
-	// 	sub_menus: [],
-	// },
-	// {
-	// 	name: "Controls",
-	// 	url: "/controls",
-	// 	sub_menus: [],
-	// },
 ];
 
 export const ShowcaseCards = [
@@ -249,13 +160,11 @@ export const introItems = [
 	{
 		title: "Who we are?",
 		description:
-			"Genprice Inc. is an American Distributor of Research Reagents and Diagnostics based in a beautiful area of San Francisco Bay. We are also in Europe under Gentaur Brand with Accounting, Tax Entity and Sales Representatives in 8 countries.",
-	},
+"At Genatur.com, we are a global team dedicated to providing our customers with a seamless online shopping experience. Our mission is to offer high-quality products from trusted suppliers, ensuring that our customers receive the best value every time they shop with us. With a strong focus on customer satisfaction, we pride ourselves on being a reliable and trustworthy e-commerce platform that connects buyers around the world with the products they need. Whether you're shopping for lifestyle goods, electronics, or unique finds, we are committed to making your shopping experience easy, secure, and enjoyable."	},
 	{
 		title: "What we do?",
 		description:
-			"We offer a variety of assays. These assays will help you move straight to your next scientific breakthrough. In this group, you will have the opportunity to compare the different types of assays. Therefore, these assays are produced by the best manufacturing laboratories. Consequently, you can easily select the most suitable one for your research.",
-	},
+"At Genatur.com, we bring the world to your doorstep. We offer fast, reliable global shipping to ensure your purchases arrive on time, no matter where you are. Our team of experienced specialists is always available to help you find the right product and guide you through the buying process. We accept payments in multiple currencies and provide a secure online payment system, so you can shop with peace of mind. With our commitment to quality, convenience, and exceptional customer support, we strive to make shopping with us an effortless and rewarding experience, no matter your location."	},
 ];
 export const introItemsTwo = [
 	{
@@ -323,6 +232,30 @@ export const productsOne = [
 		contact_email: "us@genprice.com",
 		image: "https://placehold.co/250x250",
 	},
+	{
+		name: "Glutathione Reductase Assay Kit",
+		price: "Ask for price",
+		availability: "Out of stock",
+		catalog_number: "0805004",
+		contact_email: "us@genprice.com",
+		image: "https://placehold.co/250x250",
+	},
+	{
+		name: "NATtrol Chlamydia trachomatis Positive Control",
+		price: "681.74 USD",
+		availability: "In Stock",
+		catalog_number: "NATCT(434)-6MC",
+		contact_email: "us@genprice.com",
+		image: "https://placehold.co/250x250",
+	},
+	{
+		name: "Calibration Beads for MoFlo, MoFlo XDP, and CyAn ADP",
+		price: "376.75 USD",
+		availability: "In Stock",
+		catalog_number: "B28479",
+		contact_email: "us@genprice.com",
+		image: "https://placehold.co/250x250",
+	},
 ];
 
 export const experts = [
@@ -333,7 +266,7 @@ export const experts = [
 			"Owner and CEO of Gentaur Genprice Since 2000.",
 			"Research Gate Autor.",
 		],
-		image: "https://placehold.co/250x250",
+		image: "https://media.licdn.com/dms/image/v2/D4E03AQE0jJvnCVKIxw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1702608581828?e=2147483647&v=beta&t=QWNqR4cQixs3gi0X7_PakRygu1ralVKh_DcmDeLjlRY",
 	},
 	{
 		name: "Djoumana Ounas",
@@ -341,7 +274,7 @@ export const experts = [
 			"Pharmacist Assistant Professor in Analytical Chemisty.",
 			"Consultance Expertise and Reglatory Biotech Support.",
 		],
-		image: "https://placehold.co/250x250",
+		image: "https://media.licdn.com/dms/image/v2/C4E03AQEqLjQbwvSnGg/profile-displayphoto-shrink_400_400-alternative/profile-displayphoto-shrink_400_400-alternative/0/1529143209020?e=2147483647&v=beta&t=bn9UoaSGVDR68rxlwe0S4maCVPO2atH5vhsdTn-gISE",
 	},
 	{
 		name: "Vasil Abaev",
@@ -387,14 +320,7 @@ export const productsTwo = [
 		contact_email: "us@genprice.com",
 		image: "https://placehold.co/250x250",
 	},
-	{
-		name: "1L Tween 20",
-		price: "Ask for price",
-		availability: "Out of stock",
-		catalog_number: "NAT1084",
-		contact_email: "us@genprice.com",
-		image: "https://placehold.co/250x250",
-	},
+
 ];
 
 export const productsThree = [

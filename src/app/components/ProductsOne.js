@@ -1,18 +1,21 @@
 import { productsOne } from "@mock/home";
 import ProductCardHome from "./ProductCardHome";
-
+import productImage from "@images/product.png"
+import Image from "next/image";
 const ProductsOne = () => {
  return (
-  <div className="flex justify-center w-full py-12 bg-gray-100">
+  <div className="flex justify-center w-full py-12 bg-gray-100 ">
    <div className="px-4 w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-auto justify-items-center">
     {productsOne.map((product, index) => (
      <div
       key={index}
-      className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl"
+      className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl hover:cursor-pointer"
      >
       <div className="relative overflow-hidden">
-       <img
-        src={product.image}
+       <Image
+       width={500}
+       height={500}
+        src={productImage}
         alt={product.name}
         className="w-full h-48 object-cover rounded-t-lg transition-transform duration-300 transform hover:scale-110"
        />

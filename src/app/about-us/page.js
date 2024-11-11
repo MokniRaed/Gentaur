@@ -3,7 +3,6 @@ import Image from "next/image";
 import { aboutImage } from "../mock/home";
 import Announcement from "@components/Announcement";
 import Navbar from "@components/Navbar";
-import Menu from "@components/Menu";
 import Footer from "../components/Footer";
 import { getClusters } from "../api/requests";
 import SearchBar from "../components/SearchBar";
