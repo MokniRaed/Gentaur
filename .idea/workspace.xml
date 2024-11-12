@@ -6,19 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9150bb41-f732-4fd2-81cf-c58ee46ecf31" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Announcement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Announcement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/CartButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/CartButtons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeroSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProductsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProductsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProductsTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/products/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +69,7 @@
       <workItem from="1731056639053" duration="17813000" />
       <workItem from="1731078646580" duration="2850000" />
       <workItem from="1731308724057" duration="11968000" />
-      <workItem from="1731406557682" duration="4666000" />
+      <workItem from="1731406557682" duration="5362000" />
     </task>
     <servers />
   </component>

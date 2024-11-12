@@ -45,9 +45,9 @@ export default async function Home() {
 			
 			{/* Repeated section replaced with SectionTitle */}
 			<SectionTitle
-				title="Better Data"
-				subtitle="Scalable AI"
-				description="Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+				title="Who We Are & "
+				subtitle="What We Do"
+				description="At Genatur, we focus on providing a seamless shopping experience, connecting global customers with high-quality products and reliable service, ensuring the best value every time."
 				gradientFrom="#2c3493"
 				gradientTo="#f5c500"
 			/>
