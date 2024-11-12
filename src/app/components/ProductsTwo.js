@@ -1,11 +1,7 @@
 import { productsTwo } from "@mock/home";
 import ProductCardHome from "./ProductCardHome";
-<<<<<<< Updated upstream
-import productImage from "@images/Gentaur-product3.png"
-=======
 import productImage from "@images/Gentaur.webp"
-import { fetchBestsellersProducts, fetchHighlightedProducts } from "src/app/api/Products";
->>>>>>> Stashed changes
+import {fetchHighlightedProducts } from "src/app/api/Products";
 
 const ProductsTwo = async () => {
  let response = await fetchHighlightedProducts();
