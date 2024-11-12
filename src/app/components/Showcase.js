@@ -1,6 +1,7 @@
 import { ShowcaseCards } from "@mock/home";
 import Image from 'next/image';
 import ShowcaseCard from "./ShowcaseCard";
+import Image from "next/image";
 
 const Showcase = () => {
  return (

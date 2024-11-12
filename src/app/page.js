@@ -17,6 +17,7 @@ export default async function Home() {
 	// const clusters = await getClusters();
 	// // const clusters = [];
 	//
+
 	//  if (!clusters || clusters.length === 0) {
 	//  	return (
 	//  		<div className="w-screen h-screen bg-white flex items-center justify-center">

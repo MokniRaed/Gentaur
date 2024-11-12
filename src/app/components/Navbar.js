@@ -1,5 +1,5 @@
 "use client";
-import Logo from "@images/Gentaur-eu_.svg";
+import Logo from "@images/Gentaur-logo.png";
 import { menus } from "@mock/home";
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -13,21 +13,21 @@ import Link from "next/link";
 const Navbar = ({ clusters = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [expandedMenu, setExpandedMenu] = useState(null);
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
 
-  const handleUserSearch = (phrase) => {
-    const params = new URLSearchParams(searchParams);
-    params.set("query", phrase);
-    params.set("page", 1);
-    const slug = pathname.slice(1, pathname.length);
-    if (clusters.includes(slug)) {
-      replace(`${pathname}?${params.toString()}`);
-    } else {
-      replace(`/products?${params.toString()}`);
-    }
-  };
+  // const handleUserSearch = (phrase) => {
+  //   const params = new URLSearchParams(searchParams);
+  //   params.set("query", phrase);
+  //   params.set("page", 1);
+  //   const slug = pathname.slice(1, pathname.length);
+  //   if (clusters.includes(slug)) {
+  //     replace(`${pathname}?${params.toString()}`);
+  //   } else {
+  //     replace(`/products?${params.toString()}`);
+  //   }
+  // };
 
   const handleClick = () => setIsOpen((prev) => !prev);
 
@@ -55,8 +55,8 @@ const Navbar = ({ clusters = [] }) => {
               src={Logo}
               alt="Logo"
               className="ml-[-7.5px]"
-              width={96}
-              height={96}
+              width={126}
+              height={126}
              />
            </Link>
          </div>
@@ -71,13 +71,13 @@ const Navbar = ({ clusters = [] }) => {
       <div className="block w-full h-auto bg-white lg:hidden">
         <div className="relative px-2 py-3 h-full w-full flex flex-row items-center justify-between gap-2">
           <div className="h-[45px] w-full relative bg-white border border-solid border-gray-300 shadow-sm flex items-center pr-2 transition-transform duration-300 hover:scale-105">
-            <input
-              defaultValue={searchParams.get("query")?.toString()}
-              onChange={(e) => handleUserSearch(e.target.value)}
-              type="text"
-              className="w-full h-full px-3 text-md text-gray-700 outline-none"
-              placeholder="Search by product name, brand, or category"
-            />
+            {/*<input*/}
+            {/*  defaultValue={searchParams.get("query")?.toString()}*/}
+            {/*  onChange={(e) => handleUserSearch(e.target.value)}*/}
+            {/*  type="text"*/}
+            {/*  className="w-full h-full px-3 text-md text-gray-700 outline-none"*/}
+            {/*  placeholder="Search by product name, brand, or category"*/}
+            {/*/>*/}
             <CiSearch
               color="#585858"
               size={30}

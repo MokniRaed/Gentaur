@@ -9,33 +9,33 @@ export const menus = [
 	},
 	{
 		name: "Categories",
-		url: "/categories",
+		url: "/#",
 		sub_menus: [
 			{
 				name: "Antibodies",
-				url: "/antibodies",
+				url: "/",
 				rel: "nofollow",
 				sub_menus: [
 					{
 					  name: "Primary ",
-					  url: "/primary",
+					  url: "/",
 					  rel: "nofollow",
 					  sub_menus: [
 						{
 						  name: "Primary Antibodies",
-						  url: "/antibodies/primary",
+						  url: "/",
 						  rel: "nofollow",
 						},
 						{
 						  name: "Secondary Antibodies",
-						  url: "/secondary",
+						  url: "/",
 						  rel: "nofollow",
 						},
 					  ],
 					},
 					{
 					  name: "Secondary ",
-					  url: "/secondary",
+					  url: "/",
 					  rel: "nofollow",
 					},
 				  ],
@@ -43,82 +43,82 @@ export const menus = [
 			},
 			{
 				name: "Histology",
-				url: "/histology",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Cell Analysis",
-				url: "/cell-analysis",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Biochemical Reagents",
-				url: "/biochemical-reagents",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Chemicals",
-				url: "/chemicals",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Lab Equipment",
-				url: "/lab-equipment",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "PCR",
-				url: "/pcr",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Real-Time PCR (qPCR)",
-				url: "/real-time-pcr",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "ELISA Kits",
-				url: "/elisa-kits",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Buffers and Standards",
-				url: "/buffers-and-standards",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Protein Assays",
-				url: "/protein-assays",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Flow Cytometry",
-				url: "/flow-cytometry",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "DNA & RNA",
-				url: "/dna-and-rna",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Electrophoresis",
-				url: "/electrophoresis",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Diagnostic Kit",
-				url: "/diagnostic-kit",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "ELISA",
-				url: "/elisa",
+				url: "/",
 				rel: "nofollow",
 			},
 			{
 				name: "Proteins and Peptides",
-				url: "/proteins-and-peptides",
+				url: "/",
 				rel: "nofollow",
 			},
 		],

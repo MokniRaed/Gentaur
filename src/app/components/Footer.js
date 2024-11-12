@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@images/Gentaur-eu_.svg";
+import Logo from "@images/Gentaur-logo.png";
 import Image from "next/image";
 import {
   IoLogoFacebook,
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-10 md:space-y-0">
           {/* Left Side: Logo and Tagline */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
-            <Image src={Logo} alt="Logo" width={120} height={120} />
+            <Image src={Logo} alt="Logo" width={96} height={96} />
             <p className="text-gray-600 text-sm">
               Your Trusted Source for Life Science Essentials
             </p>
