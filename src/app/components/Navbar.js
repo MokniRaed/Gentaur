@@ -10,7 +10,7 @@ import CartButtons from "./CartButtons";
 import Menu from "./Menu";
 import Link from "next/link";
 
-const Navbar = ({ clusters }) => {
+const Navbar = ({ clusters = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [expandedMenu, setExpandedMenu] = useState(null);
   // const searchParams = useSearchParams();

@@ -6,19 +6,26 @@ import { useContext, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { CartContext } from "../contexts/Cart";
 import { productsImageCartPage } from "../mock/products";
-import Image from "next/image";
+import Image from 'next/image';
 const CartItem = ({ product, changeQuantity, removeProduct }) => {
 	return (
 		<div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm   md:p-6">
 			<Toaster />
 			<div className="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
 				<a className="shrink-0 md:order-1">
-					<Image  fill className="h-20 w-20 " src={productsImageCartPage} alt="product" />
 					<Image
-					fill
-						className="hidden h-20 w-20 "
+						className="h-20 w-20"
+						src={productsImageCartPage}
+						alt="product"
+						width={80}
+						height={80}
+					/>
+					<Image
+						className="hidden h-20 w-20"
 						src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
 						alt="imac image"
+						width={80}
+						height={80}
 					/>
 				</a>
 

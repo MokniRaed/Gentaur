@@ -10,7 +10,7 @@ import Stack from "@mui/material/Stack";
 import { DataGrid } from "@mui/x-data-grid";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { memo, useContext, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { CartContext } from "../contexts/Cart";
 import { generateProductUrlForClusterPage } from "../helpers";
@@ -50,7 +50,10 @@ const ActionRender = memo(({ row, addProductToCart }) => {
 				justifyContent: "flex-start",
 			}}
 		>
-			<Box className="p-1 bg-secondary hover:bg-secondaryDark rounded-2xl text-white" 				onClick={() => addProductToCart(row)}
+			<Box
+				className={" !bg-secondary text-white hover:bg-secondaryDark p-2 rounded-2xl"}
+				// variant="soft"
+				onClick={() => addProductToCart(row)}
 			>
 				+Add
 			</Box>
@@ -78,19 +81,15 @@ export default function ProductsTable({ page, count, products }) {
 	const isTablet = useMediaQuery("(max-width:768px)");
 	const isMobile = useMediaQuery("(max-width:425px)");
 
-	const addProductToCart = (row) => {
+	const addProductToCart = useCallback((row) => {
 		let { cluster_name, variant, ...others } = row;
-		if (
-			!others.sell_price ||
-			others.sell_price === 0 ||
-			others.sell_price === "null"
-		) {
+		if (!others.sell_price || others.sell_price === 0 || others.sell_price === "null") {
 			others.sell_price = "Ask for quotation";
 		}
 		others.qty = 1;
 		addProduct(others);
 		toast.success("Product Added");
-	};
+	}, [addProduct]);
 
 	const handleChange = (event, value) => {
 		const params = new URLSearchParams(searchParams);
@@ -201,7 +200,7 @@ export default function ProductsTable({ page, count, products }) {
 					),
 			},
 		];
-	}, [isLoading, columnWidths]);
+	}, [isLoading, columnWidths , addProductToCart]);
 
 	return (
 		<Box

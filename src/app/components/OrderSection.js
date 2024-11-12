@@ -17,6 +17,8 @@ import toast, { Toaster } from "react-hot-toast";
 import Lottie from "lottie-react";
 import LoadingAnimation from "../animations/loading.json";
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
+
 
 const OrderSection = () => {
 	const { cart, removeAll } = useContext(CartContext);
@@ -109,9 +111,10 @@ const OrderSection = () => {
 									renderOption={(props, option) => (
 										<AutocompleteOption {...props}>
 											<ListItemDecorator>
-												<img
+												<Image
 													loading="lazy"
-													width="20"
+													width={20}
+													height={20}
 													srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
 													src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
 													alt=""
