@@ -10,24 +10,26 @@ import Stack from "@mui/material/Stack";
 import { DataGrid } from "@mui/x-data-grid";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { memo, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { memo, useContext, useEffect, useMemo, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { CartContext } from "../contexts/Cart";
 import { generateProductUrlForClusterPage } from "../helpers";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 // Custom Cell Renderer Component
 const CellRenderer = memo(({ value, field, name, id, cluster_name }) => {
 	const url = cluster_name + generateProductUrlForClusterPage({ name, id });
 	switch (field) {
 		case "sell_price":
-			const amount = value || "Ask for a quotation";
+			const amount = value || "Ask";
 			return (
 				<Link className="hover:text-primaryDark" legacyBehavior href={url}>
-					<span className="hover:text-primaryDark">
-						{amount !== "Ask for a quotation"
-							? `${Math.round(Number(amount)) + 1} USD`
-							: amount}
-					</span>
+                    <span className="hover:text-primaryDark">
+                        {/* {amount !== "Ask"
+                            ? `${Math.round(Number(amount)) + 1} USD`
+                            : amount} */}
+																					144 €
+                    </span>
 				</Link>
 			);
 		default:
@@ -46,17 +48,20 @@ const ActionRender = memo(({ row, addProductToCart }) => {
 				width: "100%",
 				height: "100%",
 				display: "flex",
-				alignItems: "center",
-				justifyContent: "flex-start",
+				alignItems: "center",  // Vertically centers the content
+				justifyContent: "center",  // Horizontally centers the content
 			}}
 		>
-			<Box
-				className={" !bg-secondary text-white hover:bg-secondaryDark p-2 rounded-2xl"}
-				// variant="soft"
-				onClick={() => addProductToCart(row)}
-			>
-				+Add
-			</Box>
+			{/* <Box className="px-1 bg-secondary hover:bg-secondaryDark rounded-2xl text-white"                onClick={() => addProductToCart(row)}
+            >
+                +Add
+            </Box> */}
+			<AiOutlineShoppingCart
+				//   onClick={goToCart}
+				color="#B22243"
+				size={20}
+				className="cursor-pointer transition-transform duration-300 hover:scale-110"
+			/>
 		</Box>
 	);
 });
@@ -68,11 +73,11 @@ export default function ProductsTable({ page, count, products }) {
 	const pages = Math.ceil(count / 100);
 	const { addProduct } = useContext(CartContext);
 	const [columnWidths, setColumnWidths] = useState({
-		catWidth: 150,
-		productNameWidth: 400,
+		catWidth: 100,
+		productNameWidth: 500,
 		sizeWidth: 150,
 		priceWidth: 150,
-		actionWidth: 150,
+		actionWidth: 100,
 	});
 	const searchParams = useSearchParams();
 	const pathname = usePathname();
@@ -81,15 +86,19 @@ export default function ProductsTable({ page, count, products }) {
 	const isTablet = useMediaQuery("(max-width:768px)");
 	const isMobile = useMediaQuery("(max-width:425px)");
 
-	const addProductToCart = useCallback((row) => {
+	const addProductToCart = (row) => {
 		let { cluster_name, variant, ...others } = row;
-		if (!others.sell_price || others.sell_price === 0 || others.sell_price === "null") {
+		if (
+			!others.sell_price ||
+			others.sell_price === 0 ||
+			others.sell_price === "null"
+		) {
 			others.sell_price = "Ask for quotation";
 		}
 		others.qty = 1;
 		addProduct(others);
 		toast.success("Product Added");
-	}, [addProduct]);
+	};
 
 	const handleChange = (event, value) => {
 		const params = new URLSearchParams(searchParams);
@@ -101,13 +110,14 @@ export default function ProductsTable({ page, count, products }) {
 		const updateColumnWidths = () => {
 			const width = window.innerWidth;
 			setColumnWidths({
-				catWidth: width * 0.2,
-				productNameWidth: width * 0.4,
-				sizeWidth: width * 0.2,
-				priceWidth: width * 0.2,
-				actionWidth: 150, // Keep action width consistent
+				catWidth: 150, // Fixed width for Cat
+				productNameWidth: width - 200, // Remaining space (100px for Cat, 100px for Action)
+				sizeWidth: 100,
+				priceWidth: 100,
+				actionWidth: 100, // Fixed width for Action
 			});
 		};
+
 		updateColumnWidths();
 		window.addEventListener("resize", updateColumnWidths);
 		return () => window.removeEventListener("resize", updateColumnWidths);
@@ -118,11 +128,10 @@ export default function ProductsTable({ page, count, products }) {
 			{
 				field: "catalog_number",
 				headerName: "Cat",
-				width: columnWidths.catWidth,
-				flex: 1,
+				width: 130, // Fixed width for 'Cat' column
 				renderCell: (params) =>
 					isLoading ? (
-						<Skeleton width={columnWidths.catWidth - 20} />
+						<Skeleton width={100 - 20} />
 					) : (
 						<CellRenderer
 							value={params.value}
@@ -136,11 +145,10 @@ export default function ProductsTable({ page, count, products }) {
 			{
 				field: "name",
 				headerName: "Product Name",
-				width: columnWidths.productNameWidth,
-				flex: 2,
+				flex: 1,
 				renderCell: (params) =>
 					isLoading ? (
-						<Skeleton width={columnWidths.productNameWidth - 20} />
+						<Skeleton width="100%" />
 					) : (
 						<CellRenderer
 							value={params.value}
@@ -155,7 +163,7 @@ export default function ProductsTable({ page, count, products }) {
 				field: "size",
 				headerName: "Size",
 				width: columnWidths.sizeWidth,
-				flex: 1,
+				// flex: 1,
 				renderCell: (params) =>
 					isLoading ? (
 						<Skeleton width={columnWidths.sizeWidth - 20} />
@@ -173,7 +181,7 @@ export default function ProductsTable({ page, count, products }) {
 				field: "sell_price",
 				headerName: "Price",
 				width: columnWidths.priceWidth,
-				flex: 1,
+				// flex: 1,
 				renderCell: (params) =>
 					isLoading ? (
 						<Skeleton width={columnWidths.priceWidth - 20} />
@@ -186,21 +194,26 @@ export default function ProductsTable({ page, count, products }) {
 							cluster_name={params.row?.cluster_name}
 						/>
 					),
+				cellClassName: 'text-right',
+
 			},
 			{
 				field: "action",
 				headerName: "Action",
-				width: columnWidths.actionWidth,
-				flex: 1,
+				width: 100,
+				headerAlign: 'center',
+
 				renderCell: (params) =>
 					isLoading ? (
-						<Skeleton width={columnWidths.actionWidth - 20} />
+						<Skeleton width={100 - 20} />
 					) : (
 						<ActionRender row={params.row} addProductToCart={addProductToCart} />
 					),
+				cellClassName: 'text-center',
+
 			},
 		];
-	}, [isLoading, columnWidths , addProductToCart]);
+	}, [isLoading, columnWidths]);
 
 	return (
 		<Box
@@ -222,7 +235,7 @@ export default function ProductsTable({ page, count, products }) {
 						borderBottom: "none",
 					}}
 				>
-					<div className="font-medium text-md w-full items-center justify-center flex h-14 text-[#343434]">
+					<div className="font-medium text-md w-full items-center justify-center pr-3 flex h-8 text-[#343434] ">
 						Filters
 					</div>
 				</div>

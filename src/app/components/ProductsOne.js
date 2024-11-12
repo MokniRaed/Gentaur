@@ -3,15 +3,16 @@ import ProductCardHome from "./ProductCardHome";
 import productImage from "@images/Gentaur-product1.png"
 import Image from "next/image";
 import { log } from "next/dist/server/typescript/utils";
-import { fetchBestsellersProducts  } from "src/app/api/Products";
+import { fetchBestsellersProducts, fetchHighlightedProducts } from "src/app/api/Products";
+import Link from "next/link";
 const ProductsOne = async () => {
- let response = await fetchBestsellersProducts();
+ let response = await fetchHighlightedProducts();
  const mappedProducts = response.map((item) => ({
   name: item.name,
-  price: item.sell_price || 'Ask for price',
+  price: parseInt(item.price.sell.amount)  || 'Ask for price',
   availability: item.availability || 'Out of stock',
   catalog_number: item.catalog_number,
-  contact_email: item.contact_email || 'us@genprice.com',
+  contact_email: item.contact_email || 'info@gentaur.com',
   image: 'https://placehold.co/250x250',
  }));
  return (
@@ -40,12 +41,13 @@ const ProductsOne = async () => {
 
 
        <div className="flex justify-between items-center ">
-        <a
+        <Link
          href={`mailto:${product.contact_email}`}
-         className="text-secondary hover:text-secondaryDark text-sm font-semibold transition-all duration-300">
-        Contact
-        </a>
-        <p className="text-2xl font-bold text-primary ">{product.price}</p>
+         className=" px-2 py-2 bg-primary rounded-lg hover:text-secondaryDark text-sm font-semibold transition-all duration-300"
+        >
+         Contact
+        </Link>
+        <p className="font-bold text-primary ">{product.price} €</p>
        </div>
 
       </div>

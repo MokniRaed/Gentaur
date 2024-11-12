@@ -55,16 +55,7 @@ export default async function Home() {
 			<Intro />
 			<DividerHR />
 
-			{/* Repeated section replaced with SectionTitle */}
-			<SectionTitle
-				title="Our Suppliers"
-				subtitle=""
-				// description="Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
-				gradientFrom="#2c3493"
-				gradientTo="#f5c500"
-			/>
-			<Suppliers />
-			<DividerHR />
+
 
 			{/* Repeated section replaced with SectionTitle */}
 			<SectionTitle
@@ -105,8 +96,7 @@ export default async function Home() {
                 src="https://www.leinco.com/wp-content/uploads/2024/05/Recombinant-antibody-web-1.jpg" // replace with your image path
                 alt="Background for Mpox Research"
 																fill
-                className="absolute inset-0 z-0"
-                priority // Optional: load this image with priority
+                className="absolute inset-0 z-0 object-cover"
             />
 
             {/* Overlay with gradient */}

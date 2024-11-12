@@ -13,7 +13,7 @@ module.exports = {
 				primary: "#003299",
 				primaryDark: "#25327b",
 				secondary: "#fecc00 ",
-				secondaryDark: "#f5c500",
+				secondaryDark: "#d9a400",
 			},
 			screens: {
 				lg: "1200px",

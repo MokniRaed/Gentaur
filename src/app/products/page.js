@@ -6,10 +6,12 @@ import ProductsTable from "../components/ProductsTable";
 import SearchBar from "../components/SearchBar";
 import lspds from "../mock/products";
 import Footer from "../components/Footer";
+import { fetchProducts } from "src/app/api/Products";
 
 export default async function Home({ searchParams }) {
-	const { page = 1, query = "" } = searchParams;
+	// const { page = 1, query = "" } = searchParams;
 	let response = lspds.data;
+	console.log(response);
 	let clusters;
 	function getUniqueProducts(products) {
 		const uniqueCatalogNumbers = new Set(
@@ -20,6 +22,10 @@ export default async function Home({ searchParams }) {
 		});
 	}
 
+	response = await fetchProducts()
+	response.count = 100 ;
+
+	console.log(response);
 	// try {
 	// 	clusters = await getClusters();
 
@@ -45,6 +51,8 @@ export default async function Home({ searchParams }) {
 	// } catch (error) {
 	// 	response = { count: 0, products: [] };
 	// }
+
+
 
 	return (
 		<>

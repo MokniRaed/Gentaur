@@ -1,16 +1,16 @@
 import { productsTwo } from "@mock/home";
 import ProductCardHome from "./ProductCardHome";
-import productImage from "@images/Gentaur.webp"
+import productImage from "@images/Gentaur-product3.png";
 import {fetchHighlightedProducts } from "src/app/api/Products";
 
 const ProductsTwo = async () => {
  let response = await fetchHighlightedProducts();
  const mappedProducts = response.map((item) => ({
   name: item.name,
-  price: item.sell_price || 'Ask for price',
+  price: parseInt(item.price.sell.amount) || 'Ask for price',
   availability: item.availability || 'Out of stock',
   catalog_number: item.catalog_number,
-  contact_email: item.contact_email || 'us@genprice.com',
+  contact_email: item.contact_email || 'info@gentaur.com',
   image: 'https://placehold.co/250x250',
  }));
   return (

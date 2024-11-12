@@ -20,10 +20,10 @@ const SearchBar = ({ clusters }) => {
 	};
 
 	return (
-		<div className="w-full h-auto bg-white flex flex-row items-center justify-center ">
-			<div className="px-2 py-2 h-full w-full lg:w-[60%] lg:pl-0 hidden lg:flex flex-row items-center justify-center gap-5">
-				<div className="hidden w-[100%] lg:block">
-					<div className="h-[45px] min-w-[650px] bg-white border border-solid border-gray-300  flex items-center pr-2 shadow-sm rounded-lg">
+		<div className="w-full h-auto bg-white flex flex-row items-center justify-center">
+			<div className="px-2 py-2 h-full w-full lg:px-0 flex flex-row items-center justify-center gap-5">
+				<div className="w-full">
+					<div className="h-[45px] bg-white border border-solid border-gray-300 flex items-center pr-2 shadow-sm rounded-lg">
 						<input
 							defaultValue={searchParams.get("query")?.toString()}
 							onChange={(e) => {
