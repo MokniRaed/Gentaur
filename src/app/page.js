@@ -104,8 +104,7 @@ export default async function Home() {
             <Image
                 src="https://www.leinco.com/wp-content/uploads/2024/05/Recombinant-antibody-web-1.jpg" // replace with your image path
                 alt="Background for Mpox Research"
-                layout="fill"
-                objectFit="cover"
+																fill
                 className="absolute inset-0 z-0"
                 priority // Optional: load this image with priority
             />

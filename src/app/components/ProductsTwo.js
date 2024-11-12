@@ -5,7 +5,6 @@ import {fetchHighlightedProducts } from "src/app/api/Products";
 
 const ProductsTwo = async () => {
  let response = await fetchHighlightedProducts();
- console.log("response", response);
  const mappedProducts = response.map((item) => ({
   name: item.name,
   price: item.sell_price || 'Ask for price',
@@ -14,7 +13,6 @@ const ProductsTwo = async () => {
   contact_email: item.contact_email || 'us@genprice.com',
   image: 'https://placehold.co/250x250',
  }));
- console.log("Mapped Products", mappedProducts);
   return (
     <div className="flex items-center justify-center">
       <div className=" w-full p-2 lg:p-0 lg:w-[85%] justify-center flex flex-col items-center gap-8">

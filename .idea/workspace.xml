@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9150bb41-f732-4fd2-81cf-c58ee46ecf31" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[cluster_name]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[cluster_name]/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/about-us/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about-us/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/blogs/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/blogs/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/cart/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/clusters/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/clusters/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/CartSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/CartSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ContactSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ContactSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/CustomServiceSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/CustomServiceSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Empty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Empty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/FaqSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/FaqSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/OrderSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/OrderSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/PrivacyPolicySection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/PrivacyPolicySection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProductsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ReturnsPolicySection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ReturnsPolicySection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Showcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Showcase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contexts/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contexts/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/custom-services/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/custom-services/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/faq/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/faq/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/order/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/order/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/privacy-policy/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/privacy-policy/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/products/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/return-and-refund-policy/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/return-and-refund-policy/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="9150bb41-f732-4fd2-81cf-c58ee46ecf31" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "dev",
     "last_opened_file_path": "C:/Users/user/Documents/GitHub/Gentaur",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,7 +77,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/blogs/page.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
