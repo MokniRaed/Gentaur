@@ -1,9 +1,13 @@
-import getConfig from 'next/config';
+const apiUrl = process.env.NEXT_PUBLIC_API_HOST;
 
-const { NEXT_PUBLIC_API_HOST } = getConfig().publicRuntimeConfig;
+export async function fetchBestsellersProducts() {
+	const response = await fetch(`${apiUrl}/products/get/bestsellers`);
+	if (!response.ok) throw new Error("Failed to fetch products");
+	return response.json();
+}
 
-export async function fetchProducts() {
-	const response = await fetch(`${NEXT_PUBLIC_API_HOST}/products`);
+export async function fetchHighlightedProducts() {
+	const response = await fetch(`${apiUrl}/products/get/Highlighted`);
 	if (!response.ok) throw new Error("Failed to fetch products");
 	return response.json();
 }

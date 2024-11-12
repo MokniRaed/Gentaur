@@ -17,7 +17,7 @@ const ProductCardHome = ({
 				alt={title}
 				width={500}
 				height={500}
-				className="w-full h-48 object-contain hover:scale-105 transition-all duration-300 ease-in-out"
+				className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
 			/>
 			<div className="p-4 flex flex-col items-start justify-center w-full gap-1">
 				<h3 className="text-lg font-semibold text-primary hover:text-primaryDark">

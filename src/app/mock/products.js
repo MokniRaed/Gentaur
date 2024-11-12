@@ -1553,7 +1553,7 @@ export const products = [
   },
 ];
 
-export const lspds = {
+const lspds = {
   code: 200,
   data: {
     count: 100,
@@ -7285,4 +7285,5 @@ export const lspds = {
   },
 };
 
+export  default lspds
 export const productsImageCartPage = "https://placehold.co/100x100";

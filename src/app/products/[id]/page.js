@@ -21,8 +21,8 @@ export default async function Product({ params }) {
 	return (
 		<main className="flex flex-col h-screen bg-white font-[family-name:var(--font-geist-sans)]">
 			<Announcement />
-			<Navbar clusters={clusters} />
-			<SearchBar clusters={clusters} />
+			{/*<Navbar clusters={clusters} />*/}
+			{/*<SearchBar clusters={clusters} />*/}
 			<ProductCard product={response} />
 		</main>
 	);

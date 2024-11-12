@@ -4,10 +4,12 @@ import { getClusters, getProducts, searchProducts } from "../api/requests";
 import Empty from "../components/Empty";
 import ProductsTable from "../components/ProductsTable";
 import SearchBar from "../components/SearchBar";
+import lspds from "../mock/products";
+import Footer from "../components/Footer";
 
 export default async function Home({ searchParams }) {
 	const { page = 1, query = "" } = searchParams;
-	let response;
+	let response = lspds.data;
 	let clusters;
 	function getUniqueProducts(products) {
 		const uniqueCatalogNumbers = new Set(
@@ -18,31 +20,31 @@ export default async function Home({ searchParams }) {
 		});
 	}
 
-	try {
-		clusters = await getClusters();
+	// try {
+	// 	clusters = await getClusters();
 
-		if (query.length > 0) {
-			response = await searchProducts(page, query);
-		} else {
-			response = await getProducts(page);
-		}
+	// 	if (query.length > 0) {
+	// 		response = await searchProducts(page, query);
+	// 	} else {
+	// 		response = await getProducts(page);
+	// 	}
 
-		if (
-			response &&
-			typeof response === "object" &&
-			response.hasOwnProperty("count")
-		) {
-			const { count = 0 } = response;
+	// 	if (
+	// 		response &&
+	// 		typeof response === "object" &&
+	// 		response.hasOwnProperty("count")
+	// 	) {
+	// 		const { count = 0 } = response;
 
-			if (count === 0) {
-				response = { count: 0, products: [] };
-			}
-		} else {
-			response = { count: 0, products: [] };
-		}
-	} catch (error) {
-		response = { count: 0, products: [] };
-	}
+	// 		if (count === 0) {
+	// 			response = { count: 0, products: [] };
+	// 		}
+	// 	} else {
+	// 		response = { count: 0, products: [] };
+	// 	}
+	// } catch (error) {
+	// 	response = { count: 0, products: [] };
+	// }
 
 	return (
 		<>

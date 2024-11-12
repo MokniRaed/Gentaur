@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
 
 const Loader = () => {
-  return (
-    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
-      <div className="w-16 h-16 border-4 border-t-4 border-blue-500 border-solid rounded-full animate-spin"></div>
-    </div>
-  );
+	return (
+		<section className="bg-white min-h-[70vh] flex items-center justify-center">
+			<div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+				<div className="mx-auto max-w-screen-sm text-center">
+					<div className="loader mb-4 inline-block h-16 w-16 rounded-full border-4 border-t-4 border-gray-200 border-t-blue-500 animate-spin"></div>
+					<p className="text-lg font-light text-gray-500">
+						Loading, please wait...
+					</p>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Loader;
