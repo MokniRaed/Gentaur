@@ -1,13 +1,29 @@
 import { productsTwo } from "@mock/home";
 import ProductCardHome from "./ProductCardHome";
+<<<<<<< Updated upstream
 import productImage from "@images/Gentaur-product3.png"
+=======
+import productImage from "@images/Gentaur.webp"
+import { fetchBestsellersProducts, fetchHighlightedProducts } from "src/app/api/Products";
+>>>>>>> Stashed changes
 
-const ProductsTwo = () => {
+const ProductsTwo = async () => {
+ let response = await fetchHighlightedProducts();
+ console.log("response", response);
+ const mappedProducts = response.map((item) => ({
+  name: item.name,
+  price: item.sell_price || 'Ask for price',
+  availability: item.availability || 'Out of stock',
+  catalog_number: item.catalog_number,
+  contact_email: item.contact_email || 'us@genprice.com',
+  image: 'https://placehold.co/250x250',
+ }));
+ console.log("Mapped Products", mappedProducts);
   return (
     <div className="flex items-center justify-center">
       <div className=" w-full p-2 lg:p-0 lg:w-[85%] justify-center flex flex-col items-center gap-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {productsTwo.map((product, index) => (
+          {mappedProducts.map((product, index) => (
             <ProductCardHome
               key={index}
               image={productImage}
@@ -15,7 +31,7 @@ const ProductsTwo = () => {
               availability={product.availability}
               catalogNumber={product.catalog_number}
               title={product.name}
-              contactEmail={product.contact_email} // Using mailto for example, adjust as necessary
+              contactEmail={product.contact_email}
             />
           ))}
           

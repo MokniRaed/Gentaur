@@ -2,11 +2,24 @@ import { productsOne } from "@mock/home";
 import ProductCardHome from "./ProductCardHome";
 import productImage from "@images/Gentaur-product1.png"
 import Image from "next/image";
-const ProductsOne = () => {
+import { log } from "next/dist/server/typescript/utils";
+import { fetchBestsellersProducts  } from "src/app/api/Products";
+const ProductsOne = async () => {
+ let response = await fetchBestsellersProducts();
+ console.log("response", response);
+ const mappedProducts = response.map((item) => ({
+  name: item.name,
+  price: item.sell_price || 'Ask for price',
+  availability: item.availability || 'Out of stock',
+  catalog_number: item.catalog_number,
+  contact_email: item.contact_email || 'us@genprice.com',
+  image: 'https://placehold.co/250x250',
+ }));
+ console.log("Mapped Products", mappedProducts);
  return (
   <div className="flex justify-center w-full py-12 bg-gray-100 ">
    <div className="px-4 w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-auto justify-items-center">
-    {productsOne.map((product, index) => (
+    {mappedProducts.map((product, index) => (
      <div
       key={index}
       className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl hover:cursor-pointer"

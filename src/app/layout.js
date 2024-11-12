@@ -23,6 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+<<<<<<< Updated upstream
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -30,6 +31,18 @@ export default function RootLayout({ children }) {
         <CartContextProvider>{children}</CartContextProvider>
         </Suspense>
       </body>
+=======
+    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <main className="font-[family-name:var(--font-geist-sans)] bg-white items-center">
+     <Announcement />
+     <Suspense fallback={<div>loading .. .</div>}>
+      <Navbar clusters={clusters} />
+      <CartContextProvider>{children}</CartContextProvider>
+     </Suspense>
+     <Footer />
+    </main>
+    </body>
+>>>>>>> Stashed changes
     </html>
   );
 }

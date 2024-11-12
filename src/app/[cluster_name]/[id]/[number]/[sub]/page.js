@@ -52,9 +52,9 @@ function MainLayout({ clusters, children }) {
 	return (
 		<main className="flex flex-col min-h-screen bg-white font-[family-name:var(--font-geist-sans)]">
 			<Announcement />
-			<Navbar clusters={clusters} />
+			{/*<Navbar clusters={clusters} />*/}
 
-			<SearchBar clusters={clusters} />
+			{/*<SearchBar clusters={clusters} />*/}
 			<div className="flex flex-grow">{children}</div>
 			<Footer />
 		</main>

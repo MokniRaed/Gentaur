@@ -6,7 +6,7 @@ const nextConfig = {
   },
   env: {
     //  NEXT_PUBLIC_API_HOST: 'https://api.affitechbio.com/api',
-    NEXT_PUBLIC_API_HOST: 'http://192.168.100.66:8800/gentaur',
+    NEXT_PUBLIC_API_HOST: 'http://localhost:8000/gentaur',
   },
   async rewrites() {
     return [

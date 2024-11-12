@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9150bb41-f732-4fd2-81cf-c58ee46ecf31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/components/Separator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/Supplier.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/[sub]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/[sub]/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ProductsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Showcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Showcase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Suppliers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Suppliers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ProductsTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/products/[id]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/[id]/page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ChangeHomePage&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Documents/GitHub/Gentaur&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2024.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Adding-Fetch",
+    "last_opened_file_path": "C:/Users/user/Documents/GitHub/Gentaur",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2024.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
