@@ -3,6 +3,9 @@ import "./globals.css";
 import CartContextProvider from "./contexts/Cart";
 import { Suspense } from "react";
 import Loader from "./components/Loader";
+import { Announcement } from "@mui/icons-material";
+import Footer from "@components/Footer";
+import Navbar from "@components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,15 +26,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-<<<<<<< Updated upstream
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Suspense fallback={<Loader/>}>
-        <CartContextProvider>{children}</CartContextProvider>
-        </Suspense>
-      </body>
-=======
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
     <main className="font-[family-name:var(--font-geist-sans)] bg-white items-center">
      <Announcement />
@@ -42,7 +36,6 @@ export default function RootLayout({ children }) {
      <Footer />
     </main>
     </body>
->>>>>>> Stashed changes
     </html>
   );
 }

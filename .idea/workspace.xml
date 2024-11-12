@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9150bb41-f732-4fd2-81cf-c58ee46ecf31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/api/Supplier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/[sub]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/[sub]/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[cluster_name]/[id]/[number]/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProductsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProductsTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductsTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/products/[id]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/[id]/page.js" afterDir="false" />
-    </list>
+    <list default="true" id="9150bb41-f732-4fd2-81cf-c58ee46ecf31" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
